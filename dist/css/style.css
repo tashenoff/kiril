@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+.home{
+    @apply w-full flex items-center justify-center h-screen;
+    &__title{
+        @apply text-blue-500 font-bold text-[24px];
+    }
+}
