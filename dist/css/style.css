@@ -43,9 +43,13 @@
     }
     &__menu{
         @apply lg:flex hidden;
+        
         li{
            @apply mr-5;
         }
+       a:hover{
+        @apply text-secondary;
+       }
     }
 }
 
@@ -83,7 +87,7 @@
     @apply py-20 text-center lg:w-1/2 w-full lg:px-0 px-4;    
     }
     &__bottom{
-    @apply border-t w-full border-white py-5 text-center;
+    @apply border-t w-full border-opacity-20 border-white py-5 text-center;
     }
 
 }
@@ -91,12 +95,12 @@
 
 
 .service{
-    @apply relative -top-10 z-50;
+    @apply relative -top-10 z-40;
     
 }
 
 .service-item{
-    @apply flex flex-wrap text-left bg-white;
+    @apply flex flex-wrap text-left bg-white hover:shadow-lg transition-all;
     &__head{
         @apply bg-primary w-full py-14 px-5 uppercase text-[18px] font-bold text-white;
     }
