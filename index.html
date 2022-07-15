@@ -6,15 +6,288 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container mx-auto">
-        <div class="home">
-            <h1 class="home__title">its W1orking</h1>
+<body class="bg-gray">
+    <div class="navbar__wrap bg-white">
+        <div class="container mx-auto">
+
+            <nav class="navbar">
+                <div class="navbar__left">
+                    <img src="src/img/logo.svg" alt="">
+                    <ul class="navbar__menu">
+                        <li>О нас</li>
+                        <li>Наши проекты</li>
+                        <li>Услуги</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+                <div class="navbar__right">
+                    
+                    <a class="lg:mr-5 mr-0" href="">+7(777)777-66-55</a>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:hidden block ml-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+
+                    <a class="btn btn__primary lg:block hidden" href="">обратная связь</a>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+
+    <section class="banner banner__home h-[700px]">
+        <div class="container mx-auto">
+            <div class="banner-home__wrap">
+                <h1 class="banner-home__title">Эксперт IT энвайронмента</h1>
+                <div class="banner-home__wrap">
+                    <div class="banner-home__footer">
+                        <div class="banner-home__content">
+                            <h3>О нас</h3>
+                            <p>Мы являемся компанией с более чем 7 летним опытом работы и предоставляем аутсорсинговые и
+                                консультационные услуги по IT инфраструктуре, разработке программного обеспечения,
+                                построению
+                                информационных систем, их поддержке и внедрению, автоматизации бизнес процессов клиентам
+                                на
+                                рынке РК
+                                разных масштабов и в самых разных отраслях. Наша компетентность подтверждена опытом
+                                преобразования
+                                IT-задач в реальные бизнес-результаты.
+                            </p>
+                        </div>
+                        <div class="banner-home__action">
+                            <a href="" class="btn btn__secondary flex">
+                                <span class="mr-4">
+                                    Написать нам
+                                </span>
+                                <img src="src/img/arrow-home.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about bg-white">
+        <div class="container mx-auto">
+            <div class="about__wrap">
+                <div class="title">
+                    <h1>Почему мы</h1>
+                </div>
+                <div class="about__text">
+                    <p>Внимание к деталям и качеству не имеет себе равных в отрасли. Мы не просто
+                        поставщик
+                        ресурсов, но и
+                        ключевой стратегический технологический партнер, готовый решать задачи любой сложности и
+                        реализовывать
+                        высококачественные проекты. Мы не отказываемся от инструментов до тех пор, пока вы не будете
+                        полностью
+                        удовлетворены нашим сервисом.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-4 grid-cols-2 mt-10">
+                    <div class="about__item">
+                        <i class="about__icon"></i>
+                        <span>Гибкое</br>
+                            масштабирование
+                        </span>
+                    </div>
+                    <div class="about__item">
+                        <i class="about__icon"></i>
+                        <span>Гибкое</br>
+                            масштабирование
+
+                        </span>
+                    </div>
+                    <div class="about__item lg:mt-0 mt-10">
+                        <i class="about__icon"></i>
+                        <span>Сроки</br>
+                            реагирования
+
+                        </span>
+                    </div>
+                    <div class="about__item lg:mt-0 mt-10">
+                        <i class="about__icon"></i>
+                        <span>Прозрачное</br>
+                            управление проектами
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="banner banner__service h-[400px]">
+        <div class="container mx-auto">
+            <h1 class="title mb-5">Наши услуги</h1>
+            <p class="service__text">
+                Наши специалисты постоянно доступны как онлайн, так и для регулярных выездов на сайт клиента, создавая
+                бесперебойное сотрудничество во всех аспектах вашей IT среды. Наши высококвалифицированные эксперты
+                быстро интегрируются в вашу внутреннюю команду, перенимая вашу культуру и передавая знания об изменениях
+                в процессах вашему внутреннему персоналу
+            </p>
+        </div>
+    </section>
+    <div class="service">
+        <!-- Swiper -->
+        <div class="container mx-auto">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide service-item">
+                        <div class="service-item__head">
+                            <h1>разработка программного обеспечения</h1>
+                        </div>
+
+                        <p class="service-item__body">Мы транслируем ваши требования и решим даже самые сложные задачи
+                            по
+                            разработке программного
+                            обеспечения, чтобы вы могли тратить больше времени на развитие своего основного бизнеса и
+                            повышение операционной эффективности.</p>
+
+                    </div>
+                    <div class="swiper-slide service-item">
+                        <div class="service-item__head">
+                            <h1>построение информационных систем</h1>
+                        </div>
+
+                        <p class="service-item__body">Гарантированно восполним любой пробел в навыках в Вашем штате.
+                            Наша команда разработчиков программного обеспечения может сотрудничать с вами на любом этапе
+                            вашего жизненного цикла разработки ПО входящего в ИС и решать даже самые сложные
+                            технологические задачи.</p>
+
+                    </div>
+
+                    <div class="swiper-slide service-item">
+                        <div class="service-item__head">
+                            <h1>автоматизация бизнес процессов
+                            </h1>
+                        </div>
+
+                        <p class="service-item__body">С помощью нашей команды вы можете оптимизировать затраты, повышая
+                            свою операционную эффективность и, как следствие, увеличить свой доход. А также сэкономить
+                            время и деньги на найме персонала и повышении их квалификации.
+                        </p>
+
+                    </div>
+
+                    <div class="swiper-slide service-item">
+                        <div class="service-item__head">
+                            <h1>автоматизация бизнес процессов
+                            </h1>
+                        </div>
+
+                        <p class="service-item__body">С помощью нашей команды вы можете оптимизировать затраты, повышая
+                            свою операционную эффективность и, как следствие, увеличить свой доход. А также сэкономить
+                            время и деньги на найме персонала и повышении их квалификации.
+                        </p>
+
+                    </div>
+
+
+                    <div class="swiper-slide service-item">
+                        <div class="service-item__head">
+                            <h1>автоматизация бизнес процессов
+                            </h1>
+                        </div>
+
+                        <p class="service-item__body">С помощью нашей команды вы можете оптимизировать затраты, повышая
+                            свою операционную эффективность и, как следствие, увеличить свой доход. А также сэкономить
+                            время и деньги на найме персонала и повышении их квалификации.
+                        </p>
+
+                    </div>
+
+
+                    <div class="swiper-slide service-item">
+                        <div class="service-item__head">
+                            <h1>автоматизация бизнес процессов
+                            </h1>
+                        </div>
+
+                        <p class="service-item__body">С помощью нашей команды вы можете оптимизировать затраты, повышая
+                            свою операционную эффективность и, как следствие, увеличить свой доход. А также сэкономить
+                            время и деньги на найме персонала и повышении их квалификации.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="about__pagination flex w-full items-center justify-center mt-10"></div>
         </div>
     </div>
 </body>
+<footer class="footer relative banner banner__footer">
+    <div class="flex w-full items-center justify-center">
+        <div class="block w-[60px] h-[60px] bg-primarylight relative -top-7 flex w-full items-center justify-center">
+            <img src="src/img/arrow-top.svg" alt="">
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="footer__wrap">
+            <div class="footer__text">
+                <p>Вы получаете доступ к расширения возможностей разработки по требованию и полной поддержки вашей
+                    инфраструктуры. Наш интеллектуальный подход позволяет назначать специалистов с наиболее подходящими
+                    навыками
+                    для вашего проекта, чтобы ваша основная команда могла сосредоточиться на оптимизации бизнеса в
+                    обычном
+                    режиме.</p>
+            </div>
+
+            <div class="footer__bottom">
+                <span>копирайт</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+
+            pagination: {
+                el: ".about__pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
+        });
+    </script>
+</footer>
 
 </html>

@@ -3,9 +3,156 @@
 @import "tailwindcss/utilities";
 
 
+.title{
+    @apply text-[40px];
+}
+
 .home{
     @apply w-full flex items-center justify-center h-screen;
     &__title{
-        @apply text-blue-500 font-bold text-[24px];
+        @apply text-blue-500 font-bold lg:text-[24px] text-[18px];
     }
+}
+
+
+.btn{
+   @apply px-5 cursor-pointer py-3 transition-all text-[12px] hover:bg-opacity-80 lg:w-auto w-full uppercase;
+   &__primary{
+    @apply bg-primary text-white ;
+   }
+   &__secondary{
+    @apply bg-secondary text-black;
+   }
+}
+
+
+
+
+
+.navbar{
+    @apply flex w-full justify-between items-center lg:px-0 px-5;
+    &__left{
+        @apply flex items-center w-full;
+        img{
+           @apply  lg:w-[100px] w-[80px] mr-10;
+        }
+    }
+
+    &__right{
+        @apply flex items-center w-full justify-end;
+    }
+    &__menu{
+        @apply lg:flex hidden;
+        li{
+           @apply mr-5;
+        }
+    }
+}
+
+.banner{
+    @apply  text-white flex flex-wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__home{
+    @apply bg-primary flex items-center justify-center;
+    background-image: url(/src/img/banner-home.jpg);
+    }
+    
+    &__service{
+        @apply bg-primary relative flex items-center text-center;
+        background-image: url(/src/img/banner-service.jpg);
+
+    
+    }
+    
+    &__footer{
+        @apply bg-secondary; 
+        background-image: url(/src/img/banner-footer.jpg);
+    
+    }
+
+}
+
+.footer{
+  @apply mt-20;
+    &__wrap{
+    @apply flex flex-wrap justify-center;
+    }
+    &__text{
+    @apply py-20 text-center lg:w-1/2 w-full lg:px-0 px-4;    
+    }
+    &__bottom{
+    @apply border-t w-full border-white py-5 text-center;
+    }
+
+}
+
+
+
+.service{
+    @apply relative -top-10 z-50;
+    
+}
+
+.service-item{
+    @apply flex flex-wrap text-left bg-white;
+    &__head{
+        @apply bg-primary w-full py-14 px-5 uppercase text-[18px] font-bold text-white;
+    }
+    &__body{
+        @apply text-black p-5;
+    }
+}
+        
+    
+  
+
+.banner-home{
+   
+    &__title{
+        @apply lg:text-[60px] lg:mt-0 mt-10 lg:px-0 px-4 text-[30px] font-bold mb-5;
+    }
+    &__wrap{
+        @apply flex flex-wrap lg:px-0 px-4;
+     }
+    &__footer{
+    @apply flex lg:flex-row flex-col justify-between border-t border-white py-10;
+    p{
+        @apply w-full py-5;
+    }
+   }
+   &__content{
+    @apply flex-wrap;
+   }
+   &__action{
+    @apply flex w-full lg:justify-end items-center;
+   }
+}
+
+
+
+.about{
+    @apply py-20;
+    
+    &__wrap{
+        @apply flex items-center lg:px-0 px-4 justify-center flex-wrap;
+    }
+    &__title{
+        @apply pt-20 text-[40px] text-center font-bold; 
+    }
+    &__text{
+        @apply py-10 lg:px-20 px-4 w-full text-center flex items-center justify-center;
+      
+    }
+    &__item{
+        @apply flex flex-col items-center text-center;
+        span{
+            @apply lg:text-[18px] text-[14px];
+        }
+    }
+    &__icon{
+        @apply bg-primary w-[60px] h-[60px] block rounded-full mb-5;
+    }
+  
 }
