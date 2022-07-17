@@ -95,7 +95,7 @@
 
 
 .service{
-    @apply relative -top-10 z-40;
+    @apply relative -top-10 z-40 flex items-center;
     
 }
 
@@ -106,6 +106,13 @@
     }
     &__body{
         @apply text-black p-5;
+    }
+}
+
+
+.slider-block{
+    &__arrows{
+        @apply flex w-full justify-between absolute items-center px-40;
     }
 }
         

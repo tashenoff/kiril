@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="src/css/style.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>New Ray Systems</title>
 </head>
 
 <body class="bg-gray">
 
-    <div class="navbar__wrap z-50 transition-all duration-1000 -top-[100px]  w-full left-0  bg-white lg:px-5">
+    <div class="navbar__wrap z-50 transition-all duration-1000 fixed  w-full left-0  bg-white lg:px-5">
         <div class="container mx-auto">
 
             <nav id="navbar" class="navbar">
@@ -151,7 +149,7 @@
     <div class="service">
         <!-- Swiper -->
         <div class="container lg:px-5 mx-auto">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide service-item">
                         <div class="service-item__head">
@@ -234,12 +232,31 @@
 
             </div>
             <div class="about__pagination flex w-full items-center justify-center mt-10"></div>
+
+
+    
+
+
+        </div>
+
+        <div class="slider-block__arrows">
+            <svg xmlns="http://www.w3.org/2000/svg" class="slider-block__left-arrow h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="slider-block__right-arrow h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
         </div>
     </div>
 </body>
 <footer class="footer relative banner banner__footer">
     <div class="flex lg:px-5 w-full items-center justify-center">
-        <a href="#top" class="block w-[60px] h-[60px] bg-primarylight relative -top-7 flex w-full items-center justify-center">
+        <a href="#top"
+            class="block w-[60px] hover:bg-lighten transition-all h-[60px] bg-primarylight relative -top-7 flex w-full items-center justify-center">
             <img src="src/img/arrow-top.svg" alt="">
         </a>
     </div>
@@ -263,26 +280,26 @@
 
 
     <script>
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
 
-    if (scroll >= 500) {
-        $(".navbar__wrap").addClass("fixed top-0 shadow-lg");
-    } else {
-        $(".navbar__wrap").removeClass("fixed top-0");
-        
-    }
-});
+            if (scroll >= 500) {
+                $(".navbar__wrap").addClass("shadow-lg");
+            } else {
+                $(".navbar__wrap").removeClass("shadow-lg");
 
-
-
-$("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
+            }
+        });
 
 
-        </script>
+
+        $("a[href='#top']").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+
+
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -291,8 +308,16 @@ $("a[href='#top']").click(function() {
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
+            initialSlide: 1,
             spaceBetween: 30,
-            freeMode: true,
+            centeredSlides: true,
+            loop: true,
+
+            navigation: {
+                    prevEl: '.slider-block__left-arrow',
+                    nextEl: '.slider-block__right-arrow'
+                },
+
 
             pagination: {
                 el: ".about__pagination",
@@ -302,7 +327,7 @@ $("a[href='#top']").click(function() {
             breakpoints: {
                 // when window width is >= 320px
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.2,
                     spaceBetween: 10
                 },
                 // when window width is >= 480px
