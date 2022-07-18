@@ -17,7 +17,10 @@ module.exports = {
         red: '#e045e6',
         gray: '#F4F4F4',
         blueLight: '#c3d9f6'
-      }
+      },
+
+      scale: ['hover', 'focus', 'group-hover'],
+      transform: ['hover', 'focus', 'group-hover'],
     },
   },
   plugins: [],
