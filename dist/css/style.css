@@ -41,21 +41,21 @@
     }
 
     .submenu{
-        @apply w-full;
+        @apply lg:w-auto w-full;
         li{
-           @apply p-2 w-full px-0;
+           @apply p-2 w-full px-0 lg:px-5;
         }
 
      
         a{
-            @apply w-full;
+            @apply w-full py-4 lg:py-4;
         }
 
         li:last-child{
            
             
             a{
-                @apply border-none lg:py-2 py-8;
+                @apply border-none lg:py-2 py-4;
             }
 
         }
@@ -78,7 +78,7 @@
 
         
         li{
-           @apply lg:mr-5 w-full lg:py-5 lg:mx-0 flex w-full items-center justify-center border-b border-white border-opacity-20;
+           @apply w-full  lg:py-5 flex w-full items-center justify-center border-b border-white border-opacity-20;
 
            a{
             @apply flex lg:py-2 py-8 px-2  w-full;
