@@ -43,7 +43,7 @@
            @apply p-2 w-full;
         }
         a{
-            @apply w-full border border-primary;
+            @apply w-full;
         }
     }
 
@@ -57,7 +57,7 @@
            @apply lg:mr-5 w-full lg:p-5;
 
            a{
-            @apply flex lg:p-0 p-8  border-b border-white w-full;
+            @apply flex lg:p-0 p-8  border-b border-white border-opacity-20 w-full;
         }
 
         li:hover{
@@ -192,13 +192,13 @@
 
 .hamburger { right: 0%; top: 0; }
 
-.hamburger { cursor: pointer; padding: 10px 35px 16px 0px; }
+.hamburger { cursor: pointer; padding: 15px 15px 16px 0px; }
 .hamburger span, .hamburger span:before, .hamburger span:after {
   cursor: pointer;
   border-radius: 1px;
   height: 2px;
   width: 20px;
-  background: #225AD5;
+  @apply bg-primary;
   position: absolute;
   display: inline-block;
   content: '';
