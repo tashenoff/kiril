@@ -45,6 +45,17 @@
         a{
             @apply w-full;
         }
+
+        li:last-child{
+           
+            
+            a{
+                @apply border-none;
+            }
+
+        }
+     
+     
     }
 
     &__right{
@@ -53,12 +64,26 @@
     &__menu{
         @apply lg:flex;
         
+        li:last-child{
+            a{
+            @apply border-none;
+            }
+        }
+
+        
         li{
            @apply lg:mr-5 w-full lg:p-5;
 
            a{
             @apply flex lg:p-0 p-8  border-b border-white border-opacity-20 w-full;
+
         }
+
+
+
+
+
+     
 
         li:hover{
             @apply bg-primary text-white;
@@ -192,7 +217,7 @@
 
 .hamburger { right: 0%; top: 0; }
 
-.hamburger { cursor: pointer; padding: 15px 15px 16px 0px; }
+.hamburger { cursor: pointer; padding: 15px 30px 16px 0px; }
 .hamburger span, .hamburger span:before, .hamburger span:after {
   cursor: pointer;
   border-radius: 1px;
