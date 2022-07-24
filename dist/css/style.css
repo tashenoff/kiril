@@ -42,6 +42,8 @@
         li{
            @apply p-2 w-full;
         }
+
+     
         a{
             @apply w-full;
         }
@@ -66,7 +68,7 @@
         
         li:last-child{
             a{
-            @apply border-none;
+            @apply border-none p-3;
             }
         }
 
@@ -80,9 +82,9 @@
         }
 
 
+    
 
-
-
+   
      
 
         li:hover{
