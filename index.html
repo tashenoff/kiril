@@ -20,16 +20,18 @@
 
             <nav id="navbar" class="navbar">
                 <div class="navbar__left">
-                    <img id="logo" src="src/img/logo.svg" alt="">
+                    <img class="logo" src="src/img/logo.svg" alt="">
                     <ul
                         class="navbar__menu lg:text-black text-white lg:relative absolute left-0 lg:top-0 lg:w-auto w-full h-screen lg:h-full top-[70px] lg:bg-white  bg-primary hidden">
-                        <li><a href="#">О нас</a></li>
+                        <li>
+                            <img class="w-5 h-5 lg:hidden" src="./src/img/home.svg" alt="">
+                            <a href="#">О нас</a></li>
                         <!-- <li><a href="">Наши проекты</a></li> -->
 
 
                         <li class="relative flex lg:flex-row flex-col w-full justify-between group">
                             <div class="flex w-full justify-between items-center">
-
+                                <img class="w-5 h-5 lg:hidden" src="./src/img/service.svg" alt="">
                                 <a class="" href="#">Услуги</a>
 
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -42,14 +44,24 @@
 
                             <ul
                                 class="submenu lg:absolute relative  hidden lg:group-hover:block lg:top-[65px] lg:bg-white bg-primarylight w-100 left-0">
-                                <li><a class="w-full" href="#">Разработка программного обеспечения </a></li>
-                                <li><a href="#">Построение информвционных систем</a></li>
-                                <li><a href="#">Автоматизация бизнес процессов</a></li>
-                                <li><a href="#">Внедрение и техническая поддержка</a></li>
+                                <li>
+                                    <img class="w-5 h-5 lg:hidden" src="./src/img/soft.svg" alt="">
+                                    <a class="w-full" href="#">Разработка программного обеспечения </a></li>
+                                <li>
+                                    <img class="w-5 h-5 lg:hidden" src="./src/img/system.svg" alt="">
+                                    <a href="#">Построение информвционных систем</a></li>
+                                <li>
+                                    <img class="w-5 h-5 lg:hidden" src="./src/img/automation.svg" alt="">
+                                    <a href="#">Автоматизация бизнес процессов</a></li>
+                                <li>
+                                    <img class="w-5 h-5 lg:hidden" src="./src/img/support.svg" alt="">
+                                    <a href="#">Внедрение и техническая поддержка</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Контакты</a></li>
-                        <li class=" px-5 text-center mt-5 "> <a class="flex items-center justify-center bg-secondary text-center lg:hidden uppercase text-primary" href="">обратная связь</a></li>
+                        <li>
+                            <img class="w-5 h-5 lg:hidden" src="./src/img/contacts.svg" alt="">
+                            <a href="">Контакты</a></li>
+                        <li class="lg:hidden px-5 text-center mt-5 "> <a class="flex items-center justify-center bg-secondary text-center lg:hidden uppercase text-primary" href="">обратная связь</a></li>
 
                         
                     </ul>
