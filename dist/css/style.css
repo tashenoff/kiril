@@ -42,11 +42,18 @@
         @apply flex items-center w-full justify-end;
     }
     &__menu{
-        @apply lg:flex hidden;
+        @apply lg:flex;
         
         li{
-           @apply mr-5;
+           @apply lg:mr-5 w-full;
+
+           a{
+            @apply flex lg:p-0 p-8 lg:border-none border-b border-white w-full;
         }
+
+
+        }
+     
        a:hover{
         @apply text-secondary;
        }
