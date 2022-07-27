@@ -22,7 +22,7 @@
                 <div class="navbar__left">
                     <img class="logo" src="src/img/logo.svg" alt="">
                     <ul
-                        class="navbar__menu lg:text-black text-white lg:relative absolute left-0 lg:top-0 lg:w-auto w-full h-screen lg:h-full top-[70px] lg:bg-white  bg-primary hidden">
+                        class="navbar__menu hidden lg:text-black text-white lg:relative absolute right-0 lg:top-0 lg:w-auto w-full h-screen lg:h-full top-[70px] lg:bg-white  bg-primary">
                         <li class="lg:ml-5">
                             <img class="w-5 h-5 lg:hidden" src="./src/img/home.svg" alt="">
                             <a href="#">О нас</a></li>
@@ -357,7 +357,12 @@
 
             $(this).toggleClass("active");
 
-            $(".navbar__menu.hidden").slideToggle("slow");
+            // $(".navbar__menu").toggle("slide", {direction: "right" });
+
+
+            $(".navbar__menu.hidden").animate({
+                width: "toggle"
+            });
 
 
         });
