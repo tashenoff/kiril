@@ -5,6 +5,10 @@
 
 
 .contact{
+
+    &__col{
+        @apply bg-white lg:m-0 m-3;
+    }
     &__header{
         
         h1{
