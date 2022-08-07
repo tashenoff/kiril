@@ -12,11 +12,12 @@
     &__header{
         
         h1{
-            @apply text-primary lg:text-[40px] text-[28px];
+            @apply text-primary lg:text-[30px] py-5 text-[28px];
+            font-family: 'Jura', sans-serif;
         }
 
         h3{
-            @apply uppercase tracking-widest text-black;
+            @apply uppercase tracking-widest text-black/50;
         }
     }
 }
@@ -35,7 +36,8 @@
 
 
 .btn{
-   @apply px-5 cursor-pointer py-3 transition-all text-[12px] hover:bg-opacity-80 lg:w-auto w-full uppercase;
+   @apply px-5 cursor-pointer py-3 transition-all text-[14px] hover:bg-opacity-80 lg:w-auto w-full uppercase;
+   font-family: 'Jura', sans-serif;
    &__primary{
     @apply bg-primary text-white ;
    }
@@ -197,6 +199,7 @@
    
     &__title{
         @apply lg:text-[60px] lg:mt-0 mt-10 lg:px-0 text-[30px] font-bold mb-5;
+        font-family: 'Jura', sans-serif;
     }
     &__wrap{
         @apply flex flex-wrap lg:px-0 px-4;
