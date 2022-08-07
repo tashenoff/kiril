@@ -196,7 +196,7 @@
 .banner-home{
    
     &__title{
-        @apply lg:text-[60px] lg:mt-0 mt-10 lg:px-0 px-4 text-[30px] font-bold mb-5;
+        @apply lg:text-[60px] lg:mt-0 mt-10 lg:px-0 text-[30px] font-bold mb-5;
     }
     &__wrap{
         @apply flex flex-wrap lg:px-0 px-4;
