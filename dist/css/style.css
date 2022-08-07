@@ -3,6 +3,21 @@
 @import "tailwindcss/utilities";
 
 
+
+.contact{
+    &__header{
+        
+        h1{
+            @apply text-primary lg:text-[40px] text-[28px];
+        }
+
+        h3{
+            @apply uppercase tracking-widest text-black;
+        }
+    }
+}
+
+
 .title{
     @apply text-[40px];
 }
