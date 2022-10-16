@@ -62,14 +62,14 @@
     }
 
     .submenu{
-        @apply lg:w-auto w-full;
+        @apply lg:w-[300px] w-full;
         li{
-           @apply p-2 w-full px-0 lg:px-5;
+           @apply p-2 w-full px-0 lg:px-0 lg:hover:bg-primarylight transition-all;;
         }
 
      
         a{
-            @apply w-full py-4 lg:py-4;
+            @apply w-full py-4 lg:py-4 lg:ml-2;
         }
 
         li:last-child{
