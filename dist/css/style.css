@@ -85,10 +85,10 @@
     }
 
     &__right{
-        @apply flex items-center w-full justify-end;
+        @apply flex items-center w-full justify-end ;
     }
     &__menu{
-        @apply lg:flex;
+        @apply lg:flex ;
         
         li:last-child{
             @apply  border-none;
@@ -289,4 +289,10 @@
 .hamburger.active span:after {
   transform: translateY(-8px) rotate(-45deg);
   top: 8px;
+}
+
+
+
+.mama_ya_programmist{
+    background-color: #1B90E3,
 }
