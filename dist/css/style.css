@@ -133,6 +133,11 @@
     @apply  text-white flex flex-wrap;
     background-repeat: no-repeat;
     background-size: cover;
+    p{
+    
+      
+        @apply font-bold text-lg;
+    }
     
     &__home{
     @apply bg-primary flex items-center justify-center;
