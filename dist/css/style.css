@@ -36,7 +36,7 @@
 
 
 .btn{
-   @apply px-5 cursor-pointer py-3 transition-all text-[14px] hover:bg-opacity-80 lg:w-auto w-full uppercase;
+   @apply px-5 cursor-pointer py-3 transition-all text-[14px] hover:bg-opacity-80 lg:w-[200px] text-center w-full uppercase;
    font-family: 'Jura', sans-serif;
    &__primary{
     @apply bg-primary text-white ;
@@ -159,10 +159,26 @@
 
 }
 
+.arrow-top{
+    z-index: 10009;
+    position: relative;
+}
+
 .footer{
-  @apply mt-20;
+  @apply mt-10;
+
+  &::after{
+    background-color: rgb(43 68 102 / 75%);
+    width: 100%;
+    height: 100%;
+    content:'';
+    position: absolute;
+    z-index: 1000;
+  }
     &__wrap{
     @apply flex flex-wrap justify-center;
+    z-index: 1008;
+    position: relative;
     }
     &__text{
     @apply py-20 text-center lg:w-1/2 w-full lg:px-0 px-4;    

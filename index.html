@@ -45,8 +45,8 @@
 
                             <ul
                             class="submenu lg:absolute relative  hidden lg:group-hover:block lg:top-[65px] lg:bg-primary text-white bg-primarylight left-0">
-                            <li class="lg:flex lg:items-center lg:justify-beetwen lg:px-0">
-                                <img class="w-5 h-5" src="./src/img/soft.svg" alt="">
+                            <li class="lg:flex lg:items-center lg:justify-beetwen lg:px-0 group">
+                                <img class="w-5 h-5 " src="./src/img/soft.svg" alt="">
                                 <a class="" href="soft.html">Разработка программного обеспечения </a>
                             </li>
                             <li>
@@ -88,7 +88,7 @@
                     </svg>
 
 
-                    <a class="btn btn__primary lg:block hidden" href="">обратная связь</a>
+                    <a class="btn  btn__primary lg:block hidden" href="">обратная связь</a>
                 </div>
             </nav>
 
@@ -99,14 +99,14 @@
 
 
 
-    <section class="banner banner__home h-[700px]">
+    <section class="banner banner__home lg:h-[700px] h-screen">
         <div class="container mx-auto">
             <div class="banner-home__wrap mt-10 lg:px-0">
                 <h1 class="banner-home__title px-4">Эксперт в IT энвайронменте</h1>
                 <div class="banner-home__wrap">
                     <div class="banner-home__footer">
                         <div class="banner-home__content">
-                            <h3>О нас</h3>
+                            <h3 class="uppercase font-bold text-[23px]">О нас</h3>
                             <p>Мы являемся компанией с более чем 7 летним опытом работы и предоставляем аутсорсинговые и
                                 консультационные услуги по IT инфраструктуре, разработке программного обеспечения,
                                 построению
@@ -119,12 +119,13 @@
                             </p>
                         </div>
                         <div class="banner-home__action">
-                            <a href="" class="btn btn__secondary flex">
-                                <span class="mr-4">
-                                    Написать нам
-                                </span>
-                                <img src="src/img/arrow-home.svg" alt="">
+                            <a href="" class="btn btn__secondary font-bold">
+                                     Написать нам
+                               
+                               
                             </a>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -186,10 +187,10 @@
     </section>
 
 
-    <section class="banner banner__service h-[400px]">
+    <section class="banner banner__service lg:h-[400px] h-[600px]">
         <div class="container mx-auto lg:px-5">
             <h1 class="title mb-5">Наши услуги</h1>
-            <p class="service__text">
+            <p class="service__text lg:p-0 p-5">
                 Наши специалисты постоянно доступны как онлайн, так и для регулярных выездов на сайт клиента, создавая
                 бесперебойное сотрудничество во всех аспектах вашей IT среды. Наши высококвалифицированные эксперты
                 быстро интегрируются в вашу внутреннюю команду, перенимая вашу культуру и передавая знания об изменениях
@@ -200,7 +201,7 @@
     <div class="service">
         <!-- Swiper -->
         <div class="container lg:px-5 mx-auto">
-            <div class="swiper mySwiper ">
+            <div class="swiper mySwiper lg:mt-0 mt-0 ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide service-item group">
                         <div class="service-item__head relative overflow-hidden">
@@ -326,7 +327,7 @@
     
 </body>
 <footer class="footer relative banner banner__footer">
-    <div class="flex lg:px-5 w-full items-center justify-center">
+    <div class="flex lg:px-5 w-full items-center justify-center arrow-top">
         <a href="#top"
             class="block w-[60px] hover:bg-lighten transition-all h-[60px] bg-primarylight relative -top-7 flex w-full items-center justify-center">
             <img src="src/img/arrow-top.svg" alt="">
